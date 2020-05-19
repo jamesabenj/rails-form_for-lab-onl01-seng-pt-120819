@@ -1,6 +1,5 @@
 class SchoolClassesController < ApplicationController
   def new
-    @school_class = SchoolClass.find_by(id: params[:id])
   end
 
   def create
