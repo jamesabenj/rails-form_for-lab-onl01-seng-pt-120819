@@ -4,7 +4,6 @@ class SchoolClassesController < ApplicationController
   end
 
   def create
-    @school_class = SchoolClass.new(params[:id])
     SchoolClass.create(school_class_params)
     redirect_to school_class_path
   end
