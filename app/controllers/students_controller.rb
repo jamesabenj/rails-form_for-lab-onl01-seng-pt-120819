@@ -5,7 +5,7 @@ class StudentsController < ApplicationController
   end
 
   def create
-    Student.create(song_params(:first_name, :last_name))
+    Student.create(student_params)
     redirect_to student_path
   end
 
@@ -19,7 +19,7 @@ class StudentsController < ApplicationController
 
   def update
     @student = Student.find(params[:id])
-    @student.update(student_params[:first_name, :last_name])
+    @student.update(student_params)
   end
 
   private
