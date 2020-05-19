@@ -3,7 +3,7 @@ class SchoolClassesController < ApplicationController
   end
 
   def create
-    Student.create(student_params)
+    SchoolClass.create(school_class_params)
     redirect_to student_path
   end
 
