@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources 'students', only: [:new, :create, :edit, :update]
   get '/students/:id', to: 'students#show'
+  post 'students/new', to: 'students#create'
   patch 'students/:id', to: 'students#update'
 
   resources 'school_classes', only: [:new, :create, :edit, :update]
