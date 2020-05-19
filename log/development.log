@@ -245,3 +245,32 @@ rack (2.0.8) lib/rack/handler/webrick.rb:86:in `service'
   Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
   Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.6ms)
+Started GET "/school_classes/new" for 71.105.123.240 at 2020-05-19 17:46:48 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SchoolClassesController#new as HTML
+  Rendering school_classes/new.html.erb within layouts/application
+  Rendered school_classes/new.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 376ms (Views: 367.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/school_classes/new" for 71.105.123.240 at 2020-05-19 17:46:49 +0000
+Processing by SchoolClassesController#new as */*
+  Rendering school_classes/new.html.erb within layouts/application
+  Rendered school_classes/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 15ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/school_classes/new" for 71.105.123.240 at 2020-05-19 17:46:51 +0000
+Processing by SchoolClassesController#new as HTML
+  Rendering school_classes/new.html.erb within layouts/application
+  Rendered school_classes/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/school_classes/new" for 71.105.123.240 at 2020-05-19 17:46:51 +0000
+Processing by SchoolClassesController#new as */*
+  Rendering school_classes/new.html.erb within layouts/application
+  Rendered school_classes/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
