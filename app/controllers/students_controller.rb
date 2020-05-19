@@ -19,6 +19,7 @@ class StudentsController < ApplicationController
 
   def update
     @student = Student.find(params[:id])
+    @student.update(student_params[:first_name, :last_name])
   end
 
 end
