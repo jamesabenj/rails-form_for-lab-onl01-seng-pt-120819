@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   patch 'students/:id', to: 'students#update'
 
   resources 'school_classes', only: [:new, :create, :edit, :update]
-  get 'schoolclasses/:id', to: 'school_classes#show'
-  patch 'schoolclasses/:id', to: 'school_classes#update'
+  get 'school_classes/:id', to: 'school_classes#show'
+  patch 'school_classes/:id', to: 'school_classes#update'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
