@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get '/students/:id', to: 'students#show'
   patch 'students/:id', to: 'students#update'
 
-  resources 'school_classes', only: [:new :create, :edit, :update]
+  resources 'school_classes', only: [:new, :create, :edit, :update]
   post 'school_classes/new', to: 'school_classes#create'
   get 'school_classes/:id', to: 'school_classes#show'
   patch 'school_classes/:id', to: 'school_classes#update'
